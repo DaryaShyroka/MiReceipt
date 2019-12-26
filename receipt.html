@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="mireceipt_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <h1 class = "ReceiptsHeading"> Your Receipts:</h1>
+</head>
+<!---style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style--->
+<body>
+    
+
+<!---div class="ReceiptsNavButtons">
+    <button><a href="mireceipt.html">Home</a></button>
+</div--->
+<span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="mireceipt.html">Home</a>
+  <a href="receipt.html">My Receipts</a>
+  <a href="FinancesByWeek.html">My Finances</a>
+  <a href="#">About Us</a>
+</div>
+
+ <div class="topnav">
+  <!---a class="active" href="#home">All</a--->
+  <a class ="active" href="#news">By Date</a>
+  <a href="#contact">By Shop</a>
+  <a href="#ByCategory">By Category</a>
+</div> 
+<div class="ReceiptsAllList">
+</div>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img class= "ReceiptImage" src="Ying%20Thai%20Kitchen%20Receipt.png" style="width:300px">
+</div>
+    
+<div class="mySlides fade">
+  <img class= "ReceiptImage" src="digital-receipt.png" style="width:300px">
+</div>
+    
+<div class="mySlides fade">
+  <img class = "ReceiptImage" src="Dans%20Pump%20And%20Go%20Receipt.jpg" style="width:300px">
+</div>
+    
+<div class="mySlides fade">
+  <img class= "ReceiptImage" src="CarrefourReceipt.jpg" style="width:300px">
+</div>
+    
+<div class="mySlides fade">
+  <img class= "ReceiptImage" src="Car-Seat-Receipt.jpg" style="width:300px">
+</div>
+    
+<div class="mySlides fade">
+  <img class= "ReceiptImage" src="MGsReceipt.jpg" style="width:300px">
+</div>
+
+</div>
+
+<!---div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img_fjords_wide.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img_mountains_wide.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div--->
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<br>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+    
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<button class = "CategorizeButton"> Categorize
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="FinancesByWeek.html">By Week</a>
+      <a href="#">By Month</a>
+      <a href="#">By Year</a>
+    </div>
+</body>
+</html> 

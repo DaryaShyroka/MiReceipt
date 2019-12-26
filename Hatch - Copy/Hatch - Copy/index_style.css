@@ -1,0 +1,282 @@
+*{
+    position:relative;
+    min-height: 100%;
+    background-color: #3871ad;
+}
+.welcome{
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    left: 180px;
+    color: white;
+    font-weight: 300;
+}
+.clock{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    position: relative;
+    top: 40px;
+    width: 30px;
+}
+.navigation a{
+    background-color: #13263a;
+    padding: 7.5px;
+    border-radius: 15px;
+    border-color: black;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    margin: 0px;
+    text-transform: uppercase;
+    position: relative;
+    top: 15px;
+} 
+.navigation a:hover{
+    background-color: black;
+}
+.your_team_explanation{
+    font-family: 'Oswald', sans-serif;
+    max-width: 600px;
+    color: white;
+    font-weight: 300;
+    position: relative;
+    left: 550px;
+}
+.home_page_explanation{
+    font-family: 'Oswald', sans-serif;
+    max-width: 600px;
+    color: white;
+    font-weight: 300;
+    position: relative;
+    left: 550px;
+    bottom: 40px;
+}
+a.active{
+    background-color: crimson;
+}
+.intro_logo{
+    position: relative;
+    top: 60px;
+    left: 20px;
+    border-radius: 15px;
+    width: 150px;
+    height: auto;
+}
+/* profile stuff below */
+.card_investor{
+    color: black;
+    font-size: 20px;
+    background-color: goldenrod;
+}
+.card_entrepreneur{
+    color: black;
+    font-size: 20px;
+    background-color: blue;
+}
+.card_marketer{
+    color: black;
+    font-size: 20px;
+    background-color: darkmagenta;
+}
+.card_co-founder{
+    color: black;
+    font-size: 20px;
+    background-color: deeppink;
+}
+.card_techie{
+    color: black;
+    font-size: 20px;
+    background-color: darkgreen;
+}
+.card_business{
+    color: black;
+    font-size: 20px;
+    background-color: crimson;
+}
+.profile_card_absolute{
+    position: absolute;
+}
+.profile_card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    right: 500px;
+}
+.team_card_1{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    right: 100px;
+    bottom: 400px;
+}
+.team_card_2{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    left: 300px;
+    bottom: 874px;
+}
+.team_card_3{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    right: 100px;
+    bottom: 800px;
+}
+.team_card_4{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    left: 300px;
+    bottom: 1270px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+}
+.card_description{
+    background-color: white;
+}
+.card_title {
+    color: grey;
+    font-size: 18px;
+    background-color: white;
+}
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+.card_university{
+    background-color: white;
+}
+.profile_photo{
+    border-radius: 100%;
+    width: 100px;
+    height: auto;
+}
+.twitter_icon{
+    background-color: white;
+    width:30px;
+    height: auto;
+    border-radius:15px;
+}
+.facebook_icon{
+    background-color: white;
+    width:30px;
+    height: auto;
+    border-radius:15px;
+}
+.dribble_icon{
+    background-color: white;
+    width:30px;
+    height: auto;
+    border-radius:15px;
+}
+.linkedin_icon{
+    background-color: white;
+    width:30px;
+    height: auto;
+    border-radius:15px;
+}
+.profile_name{
+    background-color: white;
+}
+a.card_list {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    background-color: white;
+}
+.card_list{
+    background-color: white;
+}
+button:hover, a:hover {
+    opacity: 0.7;
+}
+/* end of card */
+.intro_title{
+    background-color: #13263a;
+    padding: 20px;
+    border-radius: 15px;
+    border-color: black;
+    color: white;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    text-align: center;
+}
+.marketplace_of_ideas_table{
+    background-color: white;
+    width: 80%;
+}
+
+.navigation_footer a{
+    position:absolute;
+    background-color: #13263a;
+    padding: 7.5px;
+    border-radius: 15px;
+    border-color:black;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    margin: 100px;
+    text-transform: uppercase;
+}
+.navigation_footer a:hover{
+    background-color: black;
+}
+.scroll{
+    max-height: 500px;
+    max-width: 350px;
+    overflow: hidden;
+    position: relative;
+    left: 500px;
+    bottom: 500px;
+    margin: 50px;
+}    
+.scroll:hover{
+    overflow: scroll;
+}
+.your_team_list{
+    text-transform: uppercase;
+    padding: 0px; 
+    border-radius: 15px;
+    border-color:black;
+    border: 3px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    margin: 0px;
+    position: relative;
+    bottom: 1800px;
+    max-width: 300px;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Hatch</title>
+        <link rel="stylesheet" type="text/css" href="index_style.css">
+        <link rel="icon" href="hatch_logo.png">
+        <nav class="navigation">
+            <a id="nav_home_page" href="index.html">Home Page</a>
+            <a id="nav_entrepreneurs" href="entrepreneurs.html">Entrepreneurs</a>
+            <a id="nav_co_founders" href="co-founders.html">Co-Founders</a>
+            <a id="nav_techies" href="techies.html">Techies</a>
+            <a id="nav_marketeers" href="marketers.html">Marketeers</a>
+            <a id="nav_business_persons" href="business_persons.html">Business Persons</a>
+            <a id="nav_investors" href="investors.html">Investors</a>
+            <a id="nav_your_team" href="your_team.html">Your Team</a>
+            <a id="nav_marketplace_of_ideas" href="marketplace_of_ideas.html">Marketplace of ideas</a>
+            <a id="nav_log_in" href="log_in.html">Log In</a>
+        </nav>
+        <div class="clock"></div>
+            <script>
+            function clock() {// We create a new Date object and assign it to a variable called "time".
+var time = new Date(),
+    
+    // Access the "getHours" method on the Date object with the dot accessor.
+    hours = time.getHours(),
+    
+    // Access the "getMinutes" method with the dot accessor.
+    minutes = time.getMinutes(),
+    
+    
+    seconds = time.getSeconds();
+
+document.querySelectorAll('.clock')[0].innerHTML = harold(hours) + ":" + harold(minutes) + ":" + harold(seconds);
+  
+  function harold(standIn) {
+    if (standIn < 10) {
+      standIn = '0' + standIn
+    }
+    return standIn;
+  }
+}
+setInterval(clock, 1000);
+        </script>
+    </header>
+    <body>
+        
+        <a href="index.html">
+            <img class="intro_logo" src="hatch_logo.png">
+        </a>
+        <h2 class="welcome">Welcome to the Business Page!</h2>
+        <div class="profile_card">
+                    <p class="card_entrepreneur">Entrepreneur</p>
+                    <img class="profile_photo" src="Alex_E_R.jpg" alt="Alexander Ellis-Robbins">
+                    <h1 class="profile_name" >Alexander Ellis-Robbins</h1>
+                    <p class="card_title">Founder of Hatch</p>
+                    <p class="card_university">University of Exeter</p>
+                    <a class="icon_color" href="https://dribbble.com/" target="_blank"><i class="fa fa-dribbble"></i></a>
+                    <a class="icon_color" href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a class="icon_color" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a class="icon_color" href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <p class="card_description">Anyone want to help me start up Hatch?</p>
+                    <a href="profile_page.html">
+                        <p><button>Edit your Profile</button></p>
+                    </a>
+                </div>
+        <div class="scroll">
+            <div class="card">
+                <p class="card_business">Business</p>
+                <img class="profile_photo" src="mad_man.png" alt="mug_shot">
+                <h1 class="profile_name" >Gary Gibbs</h1>
+                <p class="card_title">Co-founder of Second Hand Cars</p>
+                <p class="card_university">University of Life</p>
+                <a href="https://www.twitter.com" target="_blank"><img class="twitter_icon" src="twitter.png"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img class="linkedin_icon" src="linkedIn.png"></a>
+                <a href="https://www.facebook.com" target="_blank"><img class="facebook_icon" src="facebook.png"></a>
+                <p class="card_description">I did nothing wrong!</p>
+                <p><button>Invite to your Team</button></p>
+            </div>
+            <div class="card">
+                <p class="card_business">Business</p>
+                <img class="profile_photo" src="donald_trump.png" alt="Donald Trump">
+                <h1 class="profile_name" >Donald Trump</h1>
+                <p class="card_title">I have BIG HANDS!</p>
+                <p class="card_university">Wharton School of the University of Pennsylvania</p>
+                <a href="https://twitter.com/realDonaldTrump" target="_blank"><img class="twitter_icon" src="twitter.png"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img class="linkedin_icon" src="linkedIn.png"></a>
+                <a href="https://www.facebook.com/POTUS/" target="_blank"><img class="facebook_icon" src="facebook.png"></a>
+                <p class="card_description">There are no Russians in my emails!</p>
+                <p><button>Invite to your Team</button></p>
+            </div>
+            <div class="card">
+                <p class="card_business">Business</p>
+                <img class="profile_photo" src="business_cat.png" alt="Business Cat">
+                <h1 class="profile_name" >Business Cat</h1>
+                <p class="card_title">Totally Can Count Milk</p>
+                <p class="card_university">Studied at Your Nans</p>
+                <a href="https://www.twitter.com" target="_blank"><img class="twitter_icon" src="twitter.png"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img class="linkedin_icon" src="linkedIn.png"></a>
+                <a href="https://www.facebook.com" target="_blank"><img class="facebook_icon" src="facebook.png"></a>
+                <p class="card_description">Very good at catching mice!</p>
+                <p><button>Invite to your Team</button></p>
+            </div>
+            <div class="card">
+                <p class="card_business">Business</p>
+                <img class="profile_photo" src="psychopath_businessman.png" alt="Patrick Bateman">
+                <h1 class="profile_name" >Patrick Bateman</h1>
+                <p class="card_title">Vice President of Pierce & Pierce Mergers and Aquisitions</p>
+                <p class="card_university">Harvard University</p>
+                <a href="https://www.twitter.com" target="_blank"><img class="twitter_icon" src="twitter.png"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img class="linkedin_icon" src="linkedIn.png"></a>
+                <a href="https://www.facebook.com" target="_blank"><img class="facebook_icon" src="facebook.png"></a>
+                <p class="card_description">I got the best god damn businesscard!</p>
+                <p><button>Invite to your Team</button></p>
+            </div> 
+        </div>
+    </body>
+    <footer>
+        <nav class="navigation_footer">
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </footer>
+</html>

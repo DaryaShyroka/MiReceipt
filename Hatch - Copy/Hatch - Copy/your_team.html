@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Hatch</title>
+        <link rel="stylesheet" type="text/css" href="index_style.css">
+        <link rel="icon" href="hatch_logo.png">
+        <nav class="navigation">
+            <a id="nav_home_page" href="index.html">Home Page</a>
+            <a id="nav_entrepreneurs" href="entrepreneurs.html">Entrepreneurs</a>
+            <a id="nav_co_founders" href="co-founders.html">Co-Founders</a>
+            <a id="nav_techies" href="techies.html">Techies</a>
+            <a id="nav_marketeers" href="marketers.html">Marketeers</a>
+            <a id="nav_business_persons" href="business_persons.html">Business Persons</a>
+            <a id="nav_investors" href="investors.html">Investors</a>
+            <a id="nav_your_team" href="your_team.html">Your Team</a>
+            <a id="nav_marketplace_of_ideas" href="marketplace_of_ideas.html">Marketplace of ideas</a>
+            <a id="nav_log_in" href="log_in.html">Log In</a>
+        </nav>
+        <script>
+            function clock() {// We create a new Date object and assign it to a variable called "time".
+var time = new Date(),
+    
+    // Access the "getHours" method on the Date object with the dot accessor.
+    hours = time.getHours(),
+    
+    // Access the "getMinutes" method with the dot accessor.
+    minutes = time.getMinutes(),
+    
+    
+    seconds = time.getSeconds();
+
+document.querySelectorAll('.clock')[0].innerHTML = harold(hours) + ":" + harold(minutes) + ":" + harold(seconds);
+  
+  function harold(standIn) {
+    if (standIn < 10) {
+      standIn = '0' + standIn
+    }
+    return standIn;
+  }
+}
+setInterval(clock, 1000);
+        </script>
+    </header>
+    <body class="your_team_body">
+        <div class="clock"></div>
+        <a href="index.html">
+            <img class="intro_logo" src="hatch_logo.png">
+        </a>
+        <h2 class="welcome">Welcome to the Team Page!</h2>
+        <p class="your_team_explanation">On this page you can see who is currently working on your business project. You will also find links to github to see what work has been done on your project as well as other useful links that will help you start your business.</p>
+        <div class="profile_card">
+            <p class="card_entrepreneur">Entrepreneur</p>
+            <img class="profile_photo" src="Alex_E_R.jpg" alt="Alexander Ellis-Robbins">
+            <h1 class="profile_name" >Alexander Ellis-Robbins</h1>
+            <p class="card_title">Founder of Hatch</p>
+            <p class="card_university">University of Exeter</p>
+            <a href="https://www.twitter.com" target="_blank"><img class="twitter_icon" src="twitter.png"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img class="linkedin_icon" src="linkedIn.png"></a>
+            <a href="https://www.facebook.com" target="_blank"><img class="facebook_icon" src="facebook.png"></a>
+            <p class="card_description">Anyone want to help me start up Hatch?</p>
+            <a href="profile_page.html">
+                <p><button>See your own Contributions to Project</button></p>
+            </a>
+        </div>
+        <div class="team_card_1">
+            <p class="card_marketer">Marketeer</p>
+            <img class="profile_photo" src="high_cat.png" alt="Stoned Cat">
+            <h1 class="profile_name" >KitKat</h1>
+            <p class="card_title">Marketing Director</p>
+            <p class="card_university">Cardiff University</p>
+            <a href="https://www.twitter.com" target="_blank"><img class="twitter_icon" src="twitter.png"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img class="linkedin_icon" src="linkedIn.png"></a>
+            <a href="https://www.facebook.com" target="_blank"><img class="facebook_icon" src="facebook.png"></a>
+            <p class="card_description">I can sell anything</p>
+            <p><button>See Contributions to Current Project</button></p>
+        </div>
+        <div class="team_card_2">
+            <p class="card_marketer">Marketeer</p>
+            <img class="profile_photo" src="cool_cat.png" alt="Cool Cat">
+            <h1 class="profile_name" >Mr. Nip</h1>
+            <p class="card_title">Marketing Director</p>
+            <p class="card_university">University of Rainbows</p>
+            <a href="https://www.twitter.com" target="_blank"><img class="twitter_icon" src="twitter.png"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img class="linkedin_icon" src="linkedIn.png"></a>
+            <a href="https://www.facebook.com" target="_blank"><img class="facebook_icon" src="facebook.png"></a>
+            <p class="card_description">On all the catnip!</p>
+            <p><button>See Contributions to Current Project</button></p>
+        </div> 
+        <div class="team_card_3">
+            <p class="card_techie">Tech</p>
+            <img class="profile_photo" src="gilfoyle.png" alt="Stoned Cat">
+            <h1 class="profile_name" >Bertram Gilfoyle</h1>
+            <p class="card_title">Silicon Valley Computer Techie</p>
+            <p class="card_university">MIT</p>
+            <a href="https://www.twitter.com" target="_blank"><img class="twitter_icon" src="twitter.png"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img class="linkedin_icon" src="linkedIn.png"></a>
+            <a href="https://www.facebook.com" target="_blank"><img class="facebook_icon" src="facebook.png"></a>
+            <p class="card_description">This is the best job I ever had</p>
+            <p><button>See Contributions to Current Project</button></p>
+            </div> 
+        <div class="team_card_4">
+            <p class="card_business">Business</p>
+                <img class="profile_photo" src="business_cat.png" alt="Business Cat">
+                <h1 class="profile_name" >Business Cat</h1>
+                <p class="card_title">Totally Can Count Milk</p>
+                <p class="card_university">Studied at Your Nans</p>
+                <a href="https://www.twitter.com" target="_blank"><img class="twitter_icon" src="twitter.png"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img class="linkedin_icon" src="linkedIn.png"></a>
+                <a href="https://www.facebook.com" target="_blank"><img class="facebook_icon" src="facebook.png"></a>
+                <p class="card_description">Very good at catching mice!</p>
+                <p><button>See Contributions to Current Project</button></p>
+            </div>
+        <ul class="your_team_list">
+            <a href="https://github.com/" target="_blank" >
+                <li>Github</li>
+            </a>
+            <a href="https://analytics.google.com/analytics/web/provision/?authuser=0#provision/SignUp/" target="_blank">
+                <li>Google Analytics</li>
+            </a>
+            <a href="http://www.forentrepreneurs.com/">
+                <li>forentrepreneurs.com</li>
+            </a>
+            <a href="https://canvanizer.com/new/business-model-canvas" target="_blank">
+                <li>Business Canvas</li>
+            </a>
+        </ul>
+    </body>
+    <footer>
+        <nav class="navigation_footer">
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </footer>
+</html>
